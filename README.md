@@ -1,8 +1,8 @@
-# <PLACEHOLDER_NAME>
+# Resource Loader Library for Rust
 
-[![Build Status](https://github.com/Akazukin-Team/<PLACEHOLDER_REPO>/actions/workflows/build.yml/badge.svg)](https://github.com/Akazukin-Team/<PLACEHOLDER_REPO>/actions/workflows/build.yml)
+[![Build Status](https://github.com/Akazukin-Team/Rust-Resource-Loader-Library/actions/workflows/build.yml/badge.svg)](https://github.com/Akazukin-Team/Rust-Resource-Loader-Library/actions/workflows/build.yml?query=branch:main)
 
-<PLACEHOLDER_DESCRIPTION>
+A loader library for files, uri and resource.
 
 ---
 
@@ -22,7 +22,8 @@
 
 ## Features
 
-- <PLACEHOLDER_FEATURES>
+- Provides identifiers for files, URIs and resources.
+- Provides a loader for identifiers.
 
 ---
 
@@ -44,14 +45,14 @@ Make sure you have the following installed:
 
    ```toml
    [registries.akazukin-mixed]
-   index = "sparse+https://nexus.akazukin.org/repository/cargo-<PLACEHOLDER_REGISTRY>/"
+   index = "sparse+https://nexus.akazukin.org/repository/cargo-public-libraries/"
    credential-provider = "cargo:token"
    ```
 
 2. Add the dependency to the `<dependencies>` block in your `pom.xml` file:
    ```toml
    [dependencies]
-   library = { package = "<PLACEHOLDER_ARTIFACT>", version = "VERSION", registry = "akazukin-mixed" }
+   library = { package = "resource-loader", version = "VERSION", registry = "akazukin-mixed" }
    ```
 
 ---
@@ -70,8 +71,8 @@ To build the project from source, follow these steps:
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/Akazukin-Team/<PLACEHOLDER_REPO>.git
-   cd <PLACEHOLDER_REPO>
+   git clone https://github.com/Akazukin-Team/Rust-Resource-Loader-Library.git
+   cd Rust-Resource-Loader-Library
    ```
 
 2. Build the project with cargo:
